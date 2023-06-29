@@ -1,0 +1,50 @@
+.row{
+    padding: 20px;
+    
+}
+div{    
+    background-color: #454545;
+    text-align: center;
+    color: azure;
+}
+
+/* Others */
+
+#nombre{
+    font-weight: bold;
+    background-color: #454545;
+    text-align: center;
+    color: azure;
+    
+}
+
+#sobremi{
+    font-weight: bold;
+
+}
+
+
+
+/* Estilo de la foto  y rango*/
+@media (min-width:576px){
+    #avatar {
+        position: absolute;
+        width: 12%;
+        border-radius: 60%;
+        box-shadow: 3px 3px 3px black;
+        left: 2%;
+        top: 740px;
+    }
+}
+@media (max-width:575px){
+    #avatar {
+        position: absolute;
+        width: 35%;
+        border-radius: 60%;
+        box-shadow: 3px 3px 3px black;
+        left: 32%;
+        top: 650px;
+       
+    }
+}
+

@@ -1,0 +1,17 @@
+.row{
+    padding: 20px;
+    background-color: #525252; 
+    color: azure;
+}
+
+h1, h2, h3 {
+    display: inline;
+    color: azure;
+    
+}
+
+td {
+
+    color: azure;
+    
+}

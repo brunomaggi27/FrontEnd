@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#LogoArg {
+    width: 125px;  
+}
+
+img{
+    width: 40px;
+    padding-left: 5px;
+    margin-right: 0.5em;
+}
