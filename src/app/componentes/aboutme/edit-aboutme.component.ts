@@ -4,7 +4,7 @@ import { persona } from 'src/app/model/persona.model';
 import { PersonaService } from 'src/app/service/persona.service';
 
 @Component({
-  selector: 'app-edit-aboutme',
+  selector: 'app-editaboutme',
   templateUrl: './edit-aboutme.component.html',
   styleUrls: ['./edit-aboutme.component.css']
 })
