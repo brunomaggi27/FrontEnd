@@ -10,9 +10,25 @@ import { persona } from '../model/persona.model';
 export class PersonaService {
   URL = 'https://backendbm.onrender.com/personas/';
 
-  constructor(private http: HttpClient) { }
+  constructor(private httpClient: HttpClient) { }
 
-  public getPersona(): Observable<persona>{
-    return this.http.get<persona>(this.URL+ 'detail/1');
- }
+  public lista(): Observable<persona[]>{
+    return this.httpClient.get<persona[]>(this.URL + 'lista');
+  }
+
+  public detail(id: number): Observable<persona>{
+    return this.httpClient.get<persona>(this.URL + `detail/${id}`);
+  }
+
+   public save(Persona: persona): Observable<any>{
+     return this.httpClient.post<any>(this.URL + 'create', Persona);
+   }
+
+  public update(id: number, Persona: persona): Observable<any>{
+    return this.httpClient.put<any>(this.URL + `update/${id}`, Persona);
+  }
+
+   public delete(id: number): Observable<any>{
+     return this.httpClient.delete<any>(this.URL + `delete/${id}`);
+  }
 }

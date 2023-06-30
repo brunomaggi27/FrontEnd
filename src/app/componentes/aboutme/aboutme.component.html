@@ -1,17 +1,24 @@
 
 <div class="row">
+    
+        <button type="buttom" *ngIf="isLogged">
+            <button type="button" class="btn btn-dark" routerLink="/edit-aboutme/1" >
+                Editar Usuario
+            </button>
+        </button>
+   
+
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <img src="../../../assets/Otros/Avatar/IMG_W.jpg" class="img-fluid" id="avatar">
+        <img src={{persona.img}} class="img-fluid" id="avatar">
     </div>
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <h2 id="nombre">{{persona.nombre}} {{persona.apellido}}</h2>
-        <h2 id="titulo">{{persona.descripcion}}</h2>
+        <p id="nombre">{{persona.nombre}} {{persona.apellido}}</p>
+        <p>Full Stack Developer Jr.</p>
     </div>
     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
         <span>
-            <h2 id="sobremi">Sobre mí</h2>
-            <p id="sobremi_txt">Soy una persona motivada y dedicada, con amplia experiencia en la gestión y administración tanto de sistemas informáticos como de tareas administrativas y logísticas.  
-                Estoy convencido de que mis habilidades y experiencia me permitirán hacer una importante contribución al crecimiento y éxito de la empresa, al tiempo que me brindarán la oportunidad de crecer profesionalmente y alcanzar mis metas personales y laborales.</p>
+            <h2>Sobre mí</h2>
+            <p>{{persona.descripcion}}</p>
         </span>
     </div>
 </div>
