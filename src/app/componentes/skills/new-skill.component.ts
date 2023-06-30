@@ -4,7 +4,7 @@ import { Skill } from 'src/app/model/skill';
 import { SkillService } from 'src/app/service/skill.service';
 
 @Component({
-  selector: 'app-new-skill',
+  selector: 'app-newskill',
   templateUrl: './new-skill.component.html',
   styleUrls: ['./new-skill.component.css']
 })
