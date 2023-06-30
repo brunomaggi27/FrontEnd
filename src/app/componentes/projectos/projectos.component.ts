@@ -8,5 +8,5 @@ import { TokenService } from 'src/app/service/token.service';
 })
 export class ProjectosComponent {
 
-  
+
 }

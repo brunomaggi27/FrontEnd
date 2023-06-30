@@ -1,22 +1,26 @@
-.row{
+.row {
     background-color: #454545;
     padding: 20px;
     color: azure;
 
-}    
+}
+
 .contenedor {
     width: auto;
 
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     display: inline;
     color: azure;
-    
+
 }
 
 
-.p2, .p1 {
+.p2,
+.p1 {
     display: inline-block;
     text-align: justify;
     color: azure;
@@ -25,4 +29,3 @@ h1, h2, h3 {
 .img-p {
     box-shadow: 5px 5px 10px #9e9d9d;
 }
-

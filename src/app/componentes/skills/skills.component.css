@@ -1,22 +1,25 @@
-.row{
+.row {
     padding: 20px;
-    background-color: #525252; 
+    background-color: #525252;
     color: azure;
-} 
-.circulo{
+}
+
+.circulo {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     display: inline;
     color: azure;
-    
+
 }
 
 td {
 
     color: azure;
-    
+
 }

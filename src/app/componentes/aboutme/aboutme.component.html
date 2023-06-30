@@ -1,12 +1,11 @@
-
 <div class="row">
-    
-        <button type="buttom" *ngIf="isLogged">
-            <button type="button" class="btn btn-dark" routerLink="/edit-aboutme/1" >
-                Editar Usuario
-            </button>
+
+    <button type="buttom" *ngIf="isLogged">
+        <button type="button" class="btn btn-danger" routerLink="/edit-aboutme/1">
+            Editar Usuario
         </button>
-   
+    </button>
+
 
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
         <img src={{persona.img}} class="img-fluid" id="avatar">

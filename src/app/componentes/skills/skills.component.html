@@ -2,8 +2,8 @@
 
     <h2>Hard & Soft skills</h2>
     <div class="col-lg-2">
-        <button type="buttom" routerLink="/newskill"  *ngIf="isLogged">
-            <button type="button" class="btn btn-dark" routerLink="/newskill" >
+        <button type="buttom" routerLink="/newskill" *ngIf="isLogged">
+            <button type="button" class="btn btn-dark" routerLink="/newskill">
                 Agregar Skill
             </button>
         </button>
@@ -11,24 +11,10 @@
 
 
     <div class="text-center col-sm-2 col-md-2 col-lg-2 circulo" *ngFor="let skill of skill">
-        <circle-progress
-        [percent]="(skill.porcentaje)" 
-        [radius]="100" [imageSrc]="''" 
-        [title]="(skill.nombre)"
-        [titleColor]="'azure'"
-        [titleFontSize]="'20px'"
-        [showTitle]="true" 
-        [showImage]="false" 
-        [imageHeight]="70" 
-        [imageWidth]="90" 
-        [showUnits]="false"
-        [showSubtitle]="false" 
-        [outerStrokeWidth]="7" 
-        [innerStrokeWidth]="5" 
-        [outerStrokeColor]="'#a37db5'"
-        [innerStrokeColor]="'#baacc8'" 
-        [animation]="true" 
-        [animationDuration]="300">
+        <circle-progress [percent]="(skill.porcentaje)" [radius]="100" [imageSrc]="''" [title]="(skill.nombre)"
+            [titleColor]="'azure'" [titleFontSize]="'20px'" [showTitle]="true" [showImage]="false" [imageHeight]="70"
+            [imageWidth]="90" [showUnits]="false" [showSubtitle]="false" [outerStrokeWidth]="7" [innerStrokeWidth]="5"
+            [outerStrokeColor]="'#a37db5'" [innerStrokeColor]="'#baacc8'" [animation]="true" [animationDuration]="300">
         </circle-progress>
 
         <div>
@@ -41,6 +27,6 @@
                     <i class="bi bi-trash3"></i></button>
             </td>
         </div>
-        
+
     </div>
 </div>

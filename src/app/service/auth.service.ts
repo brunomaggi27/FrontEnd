@@ -11,17 +11,17 @@ import { JwtDto } from '../model/Jwt-Dto';
 export class AuthService {
   authURL = 'https://backendbm.onrender.com/auth/';
 
-  constructor (private  HttpClient: HttpClient) { }
+  constructor(private HttpClient: HttpClient) { }
 
 
-public nuevo(nuevoUsuario: NuevoUsuario): Observable<any>{
-return this.HttpClient.post<any>(this.authURL + 'nuevo', nuevoUsuario);
+  public nuevo(nuevoUsuario: NuevoUsuario): Observable<any> {
+    return this.HttpClient.post<any>(this.authURL + 'nuevo', nuevoUsuario);
 
-}
+  }
 
-public login(loginUsuario: LoginUsuario): Observable<JwtDto> { 
-return this.HttpClient.post<JwtDto>(this.authURL +'login', loginUsuario);
-}
+  public login(loginUsuario: LoginUsuario): Observable<JwtDto> {
+    return this.HttpClient.post<JwtDto>(this.authURL + 'login', loginUsuario);
+  }
 
 
 

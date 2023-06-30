@@ -14,9 +14,9 @@ export class LogoargentinaComponent implements OnInit {
 
   constructor(private router: Router, private tokenService: TokenService) { }
 
-  
 
-  rgOnInit(): void{
+
+  rgOnInit(): void {
 
   }
 
@@ -31,7 +31,7 @@ export class LogoargentinaComponent implements OnInit {
 
 
 
-  onLogOut():void{
+  onLogOut(): void {
     this.tokenService.logOut();
     window.location.reload();
   }

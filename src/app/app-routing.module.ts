@@ -14,15 +14,15 @@ import { EditAboutmeComponent } from './componentes/aboutme/edit-aboutme.compone
 
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'login', component: LoginComponent},
-  {path: 'nuevaexp',component:NewExperienciaComponent},
-  { path: 'editexp/:id', component: EditExperienciaComponent},
-  { path: 'nuevaedu', component: NeweducacionComponent},
-  { path: 'editedu/:id', component: EditeducacionComponent},
-  { path: 'newskill', component: NewSkillComponent},
-  { path: 'editskill/:id', component: EditSkillComponent},
-  { path: 'editaboutme/:id', component: EditAboutmeComponent}
+  { path: '', component: HomeComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'nuevaexp', component: NewExperienciaComponent },
+  { path: 'editexp/:id', component: EditExperienciaComponent },
+  { path: 'nuevaedu', component: NeweducacionComponent },
+  { path: 'editedu/:id', component: EditeducacionComponent },
+  { path: 'newskill', component: NewSkillComponent },
+  { path: 'editskill/:id', component: EditSkillComponent },
+  { path: 'edit-aboutme/:id', component: EditAboutmeComponent }
 ];
 
 @NgModule({

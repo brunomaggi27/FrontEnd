@@ -12,10 +12,10 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { SkillsComponent } from './componentes/skills/skills.component';
 import { ProjectosComponent } from './componentes/projectos/projectos.component';
 import { FooterComponent } from './componentes/footer/footer.component';
-import { HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './componentes/home/home.component';
 import { LoginComponent } from './componentes/login/login.component';
-import { FormsModule} from '@angular/forms'
+import { FormsModule } from '@angular/forms'
 import { InterceptorProvider } from './service/interceptor-service';
 import { NewExperienciaComponent } from './componentes/experiencia/new-experiencia.component';
 import { EditExperienciaComponent } from './componentes/experiencia/edit-experiencia.component';
@@ -25,6 +25,9 @@ import { EditeducacionComponent } from './componentes/educacion/edit-educacion.c
 import { EditSkillComponent } from './componentes/skills/edit-skill.component';
 import { NewSkillComponent } from './componentes/skills/new-skill.component';
 import { EditAboutmeComponent } from './componentes/aboutme/edit-aboutme.component';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage, getStorage } from '@angular/fire/storage';
 
 
 
@@ -53,7 +56,7 @@ import { EditAboutmeComponent } from './componentes/aboutme/edit-aboutme.compone
     NewSkillComponent,
     EditAboutmeComponent
 
-  
+
   ],
   imports: [
     BrowserModule,
@@ -62,7 +65,9 @@ import { EditAboutmeComponent } from './componentes/aboutme/edit-aboutme.compone
     HttpClientModule,
     FormsModule,
     NgCircleProgressModule.forRoot({}),
-    HttpClientModule
+    HttpClientModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage())
   ],
   providers: [
     InterceptorProvider
